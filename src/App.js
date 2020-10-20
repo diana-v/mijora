@@ -1,36 +1,81 @@
 import './style.css'
-import React, {Component} from 'react';
+import React from 'react';
+import {
+    BrowserRouter as Router,
+    Route,
+    Switch
+} from "react-router-dom";
+
 import Layout from './components/Layout'
 import Home from './components/Home'
 import About from "./components/About";
-import Jobs from "./components/Jobs";
+import Job from "./components/Job";
 import Community from "./components/Community";
 import Blog from "./components/Blog";
 import Clients from "./components/Clients";
 import Footer from "./components/Footer";
 
+import BlogInside from "./views/BlogInside";
+import Blogs from "./views/Blogs";
+import Contacts from "./views/Contacts";
+import JobInside from "./views/JobInside";
+import Career from "./views/Career";
+import Services from "./views/Services";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
+import {library} from '@fortawesome/fontawesome-svg-core';
+import {fab} from '@fortawesome/free-brands-svg-icons';
 
 library.add(fab);
 
-class App extends Component {
-    render() {
-        return (
-            <div>
-                <Layout></Layout>
-                <Home></Home>
-                <About></About>
-                <Jobs></Jobs>
-                <Community></Community>
-                <Blog></Blog>
-                <Clients></Clients>
-                <Footer></Footer>
-            </div>
-        );
-    }
+function App() {
+    return (
+        <Router>
+            <Switch>
+                <Route exact path="/">
+                    <Layout></Layout>
+                    <Home></Home>
+                    <About></About>
+                    <Job></Job>
+                    <Community></Community>
+                    <Blog></Blog>
+                    <Clients></Clients>
+                    <Footer useScrollSnap></Footer>
+                </Route>
+                <Route path="/blog-inside">
+                    <Layout></Layout>
+                    <BlogInside></BlogInside>
+                    <Footer></Footer>
+                </Route>
+                <Route path="/blogs">
+                    <Layout></Layout>
+                    <Blogs></Blogs>
+                    <Footer></Footer>
+                </Route>
+                <Route path="/contacts">
+                    <Layout></Layout>
+                    <Contacts></Contacts>
+                    <Footer></Footer>
+                </Route>
+                <Route path="/job-inside">
+                    <Layout></Layout>
+                    <JobInside></JobInside>
+                    <Footer></Footer>
+                </Route>
+                <Route path="/career">
+                    <Layout></Layout>
+                    <Career></Career>
+                    <Footer></Footer>
+                </Route>
+                <Route path="/services">
+                    <Layout></Layout>
+                    <Services></Services>
+                    <Footer></Footer>
+                </Route>
+            </Switch>
+        </Router>
+    );
 }
 
 export default App;

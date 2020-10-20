@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import Iconwhite from '../assets/mijora_icon_white.svg'
+import Iconwhite from '../assets/logos/mijora_icon_white.svg'
 
 export default class About extends Component {
     render() {

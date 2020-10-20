@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import Icon from '../assets/mijora_icon.svg'
+import Icon from '../assets/logos/mijora_icon.svg'
 
 export default class Home extends Component {
     render() {

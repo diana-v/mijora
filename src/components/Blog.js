@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import NextIcon from '../assets/next.svg'
+import NextIcon from '../assets/icons/next.svg'
 import BlogImage from '../assets/blog_image.jpg'
 
 export default class Blog extends Component {

@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
-import MijoraLogo from '../assets/mijora_logo.svg'
+import MijoraLogo from '../assets/logos/mijora_logo.svg'
 
 export default class Footer extends Component {
     render() {
         return (
-            <footer className={"py-4 bl"}>
+            <footer className={"py-4"}>
                 <div className={"container"}>
                     <div className={"row"}>
                         <div className={"col-lg-3 col-12"}>

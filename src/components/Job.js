@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
-import NextIcon from '../assets/next.svg'
-import ArrowRightIcon from '../assets/right.svg'
+import NextIcon from '../assets/icons/next.svg'
+import ArrowRightIcon from '../assets/icons/right.svg'
 
-export default class Jobs extends Component {
+export default class Job extends Component {
     render() {
         return (
             <div className={"block-grey bl"}>

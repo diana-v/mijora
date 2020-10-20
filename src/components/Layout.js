@@ -2,9 +2,9 @@ import React, { Component} from "react"
 import jQuery from "jquery";
 import ToastContext from "../contexts/ToastContext";
 
-import Sun from '../assets/sun.svg'
-import Moon from '../assets/moon.svg'
-import Baby from '../assets/baby.svg'
+import Sun from '../assets/icons/sun.svg'
+import Moon from '../assets/icons/moon.svg'
+import Baby from '../assets/icons/baby.svg'
 
 export default class Layout extends Component {
     modeToggle = () => {

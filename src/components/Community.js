@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
-import FacebookIcon from '../assets/facebook.svg'
-import InstagramIcon from '../assets/instagram.svg'
-import LinkedInIcon from '../assets/linkedin.svg'
-import GithubIcon from '../assets/github.svg'
+import FacebookIcon from '../assets/icons/facebook.svg'
+import InstagramIcon from '../assets/icons/instagram.svg'
+import LinkedInIcon from '../assets/icons/linkedin.svg'
+import GithubIcon from '../assets/icons/github.svg'
 import FamilyPhoto from '../assets/family-2.png'
 
 export default class Community extends Component {

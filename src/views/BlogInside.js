@@ -1,7 +1,6 @@
-import React, {Component} from 'react'
 import Icon from '../assets/mijora_icon.svg'
 
-export default class Home extends Component {
+export default class BlogInside extends Component {
     render() {
         return (
             <div className={"main-block bl"}>

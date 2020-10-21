@@ -18,14 +18,13 @@ export default class Job extends Component {
                                     </h2>
                                     <h3 className={"header-3"}>
                                         you?
-                                        <Link to={"/career"} className={"more d-lg-none d-block"}><span
-                                            className={"more"}>See more <img src={NextIcon}
-                                                                             width="17" alt={"Next icon"}/></span></Link>
+                                        <Link to={"/career"} className={"more d-lg-none d-block"}>See more <img src={NextIcon}
+                                                                             width="17" alt={"Next icon"}/></Link>
                                     </h3>
                                 </div>
                                 <div className={"col-lg-6 col-12 text-right pt-3 d-lg-block d-none"}>
-                                    <Link to={"/career"} className={"more"}><span className={"more"}>See more <img
-                                        src={NextIcon} width="20" alt={"Next icon"}/></span></Link>
+                                    <Link to={"/career"} className={"more"}>See more<img
+                                        src={NextIcon} width="20" alt={"Next icon"}/></Link>
                                 </div>
                                 <div className={"col-12"}>
                                     <div className={"row"}>
@@ -35,7 +34,7 @@ export default class Job extends Component {
                                                     <div className={"card-body px-0"}>
                                                         <div className={"row"}>
                                                             <div className={"col-lg-6 col-9"}>
-                                                                <h5 className={"mb-0 header-5"}>React developer</h5>
+                                                                <h4 className={"mb-0 header-4-sm"}>React developer</h4>
                                                                 <span className={"f-basker d-block"}>Apps • Websites • Services</span>
                                                                 <span className={"location d-block"}>Kaunas</span>
                                                             </div>
@@ -55,7 +54,7 @@ export default class Job extends Component {
                                                     <div className={"card-body px-0"}>
                                                         <div className={"row"}>
                                                             <div className={"col-lg-6 col-9"}>
-                                                                <h5 className={"mb-0 header-5"}>React developer</h5>
+                                                                <h4 className={"mb-0 header-4-sm"}>React developer</h4>
                                                                 <span className={"f-basker d-block"}>Apps • Websites • Services</span>
                                                                 <span className={"location d-block"}>Kaunas</span>
                                                             </div>
@@ -75,7 +74,7 @@ export default class Job extends Component {
                                                     <div className={"card-body px-0"}>
                                                         <div className={"row"}>
                                                             <div className={"col-lg-6 col-9"}>
-                                                                <h5 className={"mb-0 header-5"}>React developer</h5>
+                                                                <h4 className={"mb-0 header-4-sm"}>React developer</h4>
                                                                 <span className={"f-basker d-block"}>Apps • Websites • Services</span>
                                                                 <span className={"location d-block"}>Kaunas</span>
                                                             </div>
@@ -95,7 +94,7 @@ export default class Job extends Component {
                                                     <div className={"card-body px-0"}>
                                                         <div className={"row"}>
                                                             <div className={"col-lg-6 col-9"}>
-                                                                <h5 className={"mb-0 header-5"}>React developer</h5>
+                                                                <h4 className={"mb-0 header-4-sm"}>React developer</h4>
                                                                 <span className={"f-basker d-block"}>Apps • Websites • Services</span>
                                                                 <span className={"location d-block"}>Kaunas</span>
                                                             </div>

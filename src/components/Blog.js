@@ -18,14 +18,13 @@ export default class Blog extends Component {
                                     </h2>
                                     <h3 className={"header-3"}>
                                         NOW?
-                                        <Link to={"/blog-inside"} className={"more d-lg-none d-block"}><span
-                                            className={"more"}>See more <img src={NextIcon} width="20"
-                                                                             alt={"Next icon"}/></span></Link>
+                                        <Link to={"/blog-inside"} className={"more d-lg-none d-block"}>See more <img src={NextIcon} width="20"
+                                                                             alt={"Next icon"}/></Link>
                                     </h3>
                                 </div>
                                 <div className={"col-lg-6 col-12 text-right pt-3 d-lg-block d-none"}>
-                                    <Link to={"/blog-inside"} className={"more"}><span className={"more"}>See more <img
-                                        src={NextIcon} width="20" alt={"Next icon"}/></span></Link>
+                                    <Link to={"/blog-inside"} className={"more"}>See more <img
+                                        src={NextIcon} width="20" alt={"Next icon"}/></Link>
                                 </div>
                                 <div className={"col-12"}>
                                     <div className={"row"}>

@@ -72,8 +72,9 @@ h3.header-3 {
   font-family: 'Barlow', sans-serif;
 }
 
-h5.header-5 {
-  font-family: 'Barlow', sans-serif;
+h4.header-4-sm {
+  font-family: 'Barlow', sans-serif !important;
+  font-size: 20px;
 }
 
 span.f-black {
@@ -548,8 +549,8 @@ h1.main {
   h4 {
     font-size: 18px;
   }
-  h5.header-5 {
-    font-size: 16px;
+  h4.header-4-sm {
+    font-size: 16px !important;
   }
   p.paragraph {
     font-size: 14px;
@@ -618,8 +619,8 @@ h1.main {
   h4 {
     font-size: 17px;
   }
-  h5.header-5 {
-    font-size: 16px;
+  h4.header-4-sm {
+    font-size: 16px !important;
   }
   p.paragraph {
     font-size: 12px;
@@ -807,8 +808,8 @@ html body.dark-mode {
   color: #fff;
 }
 
-.dark-mode h5.header-5 {
-  color: #fff;
+.dark-mode h4.header-4-sm {
+  color: #fff !important;
 }
 
 .dark-mode h6 {
@@ -1210,8 +1211,8 @@ html body.dark-mode {
   h4 {
     font-size: 18px;
   }
-  h5.header-5 {
-    font-size: 16px;
+  h4.header-4-sm {
+    font-size: 16px !important;
   }
   p.paragraph {
     font-size: 14px;
@@ -1288,8 +1289,8 @@ html body.dark-mode {
   h4 {
     font-size: 17px;
   }
-  h5.header-5 {
-    font-size: 16px;
+  h4.header-4-sm {
+    font-size: 16px !important;
   }
   p.paragraph {
     font-size: 12px;

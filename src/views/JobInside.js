@@ -1,14 +1,15 @@
-import Icon from '../assets/logos/mijora_icon.svg'
-import ArrowRightIcon from '../assets/icons/right.svg'
-import TooltipContext from "../contexts/TooltipContext";
 import React from "react";
-import {Form, Button} from "react-bootstrap"
+import { Link } from 'react-router-dom';
+import { Form, Button } from "react-bootstrap";
+import Icon from '../assets/logos/mijora_icon.svg';
+import ArrowRightIcon from '../assets/icons/right.svg';
+import TooltipContext from "../contexts/TooltipContext";
 
 export default function JobInside() {
     return (
         <div>
             <div className={"other logo-wrapper"}>
-                <a href={"/"}><img src={Icon} width="70" alt={"Mijora icon"}/></a>
+                <Link to={"/"}><img src={Icon} width="70" alt={"Mijora icon"}/></Link>
             </div>
             <div className={"block-default pt-0 pt-lg-5"}>
                 <div className={"container career pt-lg-5"}>
@@ -101,7 +102,7 @@ export default function JobInside() {
                                         <div className={"custom-file"}>
                                             <Form.Control type={"file"} className={"custom-file-input"}
                                                           id={"customFile"}/>
-                                            <Form.Label className={"custom-file-label"} htmlFor={"customFile"}>Choose
+                                            <Form.Label className={"form-input custom-file-label"} htmlFor={"customFile"}>Choose
                                                 file</Form.Label>
                                         </div>
                                     </div>
@@ -117,7 +118,7 @@ export default function JobInside() {
                                     <h2 className={"header-2"}>We are also looking for</h2>
                                 </div>
                                 <div className={"col-12 my-2"}>
-                                    <a className={"job"} href={"/job"}>
+                                    <Link className={"job"} to={"/job-inside"}>
                                         <div className={"job-card employer-card"}>
                                             <div className={"card-body px-0"}>
                                                 <div className={"row"}>
@@ -134,10 +135,10 @@ export default function JobInside() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className={"col-12 my-2"}>
-                                    <a className={"job"} href={"/job"}>
+                                    <Link className={"job"} to={"/job-inside"}>
                                         <div className={"job-card employer-card"}>
                                             <div className={"card-body px-0"}>
                                                 <div className={"row"}>
@@ -154,10 +155,10 @@ export default function JobInside() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className={"col-12 my-2"}>
-                                    <a className={"job"} href={"/job"}>
+                                    <Link className={"job"} to={"/job-inside"}>
                                         <div className={"job-card employer-card"}>
                                             <div className={"card-body px-0"}>
                                                 <div className={"row"}>
@@ -174,7 +175,7 @@ export default function JobInside() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

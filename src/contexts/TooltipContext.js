@@ -1,5 +1,5 @@
 import React from "react";
-import {Tooltip, OverlayTrigger} from "react-bootstrap";
+import { Tooltip, OverlayTrigger } from "react-bootstrap";
 import GithubGrey from "../assets/icons/github-grey.svg";
 import FacebookGrey from "../assets/icons/facebookgrey.svg";
 import InstagramGrey from "../assets/icons/instagramgrey.svg";

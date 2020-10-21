@@ -1,13 +1,14 @@
-import React from 'react'
-import Icon from '../assets/logos/mijora_icon.svg'
-import BlogImage from '../assets/blog_image.jpg'
-import ArrowRightIcon from '../assets/icons/right.svg'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Icon from '../assets/logos/mijora_icon.svg';
+import BlogImage from '../assets/blog_image.jpg';
+import ArrowRightIcon from '../assets/icons/right.svg';
 
 export default function BlogInside() {
     return (
             <div>
                 <div className={"other logo-wrapper"}>
-                    <a href="/"><img src={Icon} width="70" alt={"Mijora icon"}/></a>
+                    <Link to={"/"}><img src={Icon} width="70" alt={"Mijora icon"}/></Link>
                 </div>
                 <div className={"block-default pt-lg-5 pt-0"}>
                     <div className={"container career"}>
@@ -53,7 +54,7 @@ export default function BlogInside() {
                                         <h2 className={"header-2"}>People also read</h2>
                                     </div>
                                     <div className={"col-12 my-2"}>
-                                        <a className={"job"} href={"/job"}>
+                                        <Link className={"job"} to={"/career"}>
                                             <div className={"job-card employer-card"}>
                                                 <div className={"card-body px-0"}>
                                                     <div className={"row"}>
@@ -68,10 +69,10 @@ export default function BlogInside() {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className={"col-12 my-2"}>
-                                        <a className={"job"} href={"/job"}>
+                                        <Link className={"job"} to={"/career"}>
                                             <div className={"job-card employer-card"}>
                                                 <div className={"card-body px-0"}>
                                                     <div className={"row"}>
@@ -86,10 +87,10 @@ export default function BlogInside() {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className={"col-12 my-2"}>
-                                        <a className={"job"} href={"/job"}>
+                                        <Link className={"job"} href={"/career"}>
                                             <div className={"job-card employer-card"}>
                                                 <div className={"card-body px-0"}>
                                                     <div className={"row"}>
@@ -104,7 +105,7 @@ export default function BlogInside() {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

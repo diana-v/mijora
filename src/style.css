@@ -1,13 +1,9 @@
 html, body {
   font-family: 'Barlow', sans-serif;
-  /*font-family: 'Playfair Display', serif;*/
-  /*overflow: hidden; !* Hide scrollbars *!*/
-  /*overflow-y: scroll;*/
   width: 100%;
   height: 100%;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
-  /*-khtml-user-select: none; !* Konqueror HTML *!*/
   -moz-user-select: none; /* Old versions of Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none;
@@ -22,6 +18,7 @@ img {
   -webkit-user-select: none;
   user-select: none;
 }
+
 ::-webkit-scrollbar {
   width: 0;
   background: transparent; /* make scrollbar transparent */
@@ -349,8 +346,8 @@ label {
 }
 
 .form-input {
-  background-color: #ececec;
-  border: 0;
+  background-color: #ececec !important;
+  border: 0 !important;
   border-radius: 3px;
 }
 
@@ -364,6 +361,12 @@ label {
 
 .form-input:-ms-input-placeholder { /* Microsoft Edge */
   color: #aeaeae;
+}
+
+.custom-file-label::after {
+  color: #ffffff !important;
+  background-color: #665f8c !important;
+  height: 100% !important;
 }
 
 .text-muted {
@@ -404,11 +407,10 @@ label {
 }
 
 .form-input:focus {
-  color: #495057;
-  background-color: #f1f1f1;
-  border-color: #80bdff;
-  outline: 0;
-  box-shadow: none;
+  background-color: #191919 !important;
+  color: #ffffff !important;
+  border: 0;
+  box-shadow: none !important;
 }
 
 .block-button-xs {
@@ -448,8 +450,8 @@ span.author-details {
 }
 
 .other.logo-wrapper img {
-  background-color:#fff;
-  padding:10px;
+  background-color: #fff;
+  padding: 10px;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.03);
 }
 
@@ -750,19 +752,14 @@ h1.main {
 /*DARKMODE*/
 html body.dark-mode {
   font-family: 'Barlow', sans-serif;
-  /*font-family: 'Playfair Display', serif;*/
-  /*overflow: hidden; !* Hide scrollbars *!*/
-  /*overflow-y: scroll;*/
   width: 100%;
   height: 100%;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
-  /*-khtml-user-select: none; !* Konqueror HTML *!*/
   -moz-user-select: none; /* Old versions of Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none;
   background-color: #222222 !important;
-  /*overflow: hidden;*/
   scroll-snap-type: y mandatory;
 }
 
@@ -823,7 +820,7 @@ html body.dark-mode {
 }
 
 .dark-mode .logo-wrapper {
-  top: 50px;
+  top: 20px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -1030,8 +1027,8 @@ html body.dark-mode {
 }
 
 .dark-mode .form-input {
-  background-color: #000;
-  border: 0;
+  background-color: #000 !important;
+  border: none !important;
   border-radius: 3px;
 }
 
@@ -1084,10 +1081,10 @@ html body.dark-mode {
   top: 0;
 }
 
-.form-input:focus {
-  color: #ffffff;
-  background-color: #191919;
-  border-color: #80bdff;
+.dark-mode .form-input:focus {
+  color: #ffffff !important;
+  background-color: #191919 !important;
+  border: 0;
   outline: 0;
   box-shadow: none;
 }

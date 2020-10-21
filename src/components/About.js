@@ -1,5 +1,6 @@
-import React, {Component} from 'react'
-import Iconwhite from '../assets/logos/mijora_icon_white.svg'
+import React, {Component} from 'react';
+import { Link } from "react-router-dom";
+import IconWhite from '../assets/logos/mijora_icon_white.svg';
 
 export default class About extends Component {
     render() {
@@ -22,13 +23,13 @@ export default class About extends Component {
                                         solutions, therefore, after analyzing your needs and goals, we will select
                                         the most suitable technological solutions.
                                     </p>
-                                    <a href={"/"} className={"btn btn-light mt-3 f-width-xs text-center"}>
-                                        Our services</a>
+                                    <Link to={"/services"} className={"btn btn-light mt-3 f-width-xs text-center"}>
+                                        Our services</Link>
                                 </div>
                                 <div
                                     className={"col-lg-6 col-12 text-lg-right text-center pb-lg-0 pb-5 order-first order-lg-last"}>
                                     <img className={"img-responsive img-limiter"}
-                                         src={Iconwhite} alt="White Mijora Icon" width="240"/>
+                                         src={IconWhite} alt={"White Mijora Icon"} width="240"/>
                                 </div>
                             </div>
                         </div>

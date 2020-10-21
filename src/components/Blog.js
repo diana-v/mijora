@@ -1,6 +1,7 @@
-import React, {Component} from 'react'
-import NextIcon from '../assets/icons/next.svg'
-import BlogImage from '../assets/blog_image.jpg'
+import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
+import NextIcon from '../assets/icons/next.svg';
+import BlogImage from '../assets/blog_image.jpg';
 
 export default class Blog extends Component {
     render() {
@@ -17,19 +18,19 @@ export default class Blog extends Component {
                                     </h2>
                                     <h3 className={"header-3"}>
                                         NOW?
-                                        <a href={"/"} className={"more d-lg-none d-block"}><span
+                                        <Link to={"/blog-inside"} className={"more d-lg-none d-block"}><span
                                             className={"more"}>See more <img src={NextIcon} width="20"
-                                                                             alt={"Next icon"}/></span></a>
+                                                                             alt={"Next icon"}/></span></Link>
                                     </h3>
                                 </div>
                                 <div className={"col-lg-6 col-12 text-right pt-3 d-lg-block d-none"}>
-                                    <a href={"/"} className={"more"}><span className={"more"}>See more <img
-                                        src={NextIcon} width="20" alt={"Next icon"}/></span></a>
+                                    <Link to={"/blog-inside"} className={"more"}><span className={"more"}>See more <img
+                                        src={NextIcon} width="20" alt={"Next icon"}/></span></Link>
                                 </div>
                                 <div className={"col-12"}>
                                     <div className={"row"}>
                                         <div className={"col-lg-4 col-12 my-lg-2 mb-2"}>
-                                            <a className={"blog"} href={"/"}>
+                                            <Link className={"blog"} to={"/blog-inside"}>
                                                 <img src={BlogImage} className={"img-fluid w-100"} alt={"Blog"}/>
                                                 <span className={"blog-title d-block pt-3"}>
                                                         Global pandemic strikes again
@@ -41,25 +42,25 @@ export default class Blog extends Component {
                                                     standard dummy text ever since the 1500s, when an unknown
                                                     printer...
                                                 </p>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className={"col-lg-4 d-none d-lg-block col-12 my-lg-2 mb-2"}>
-                                            <a className={"blog"} href={"/"}>
+                                            <Link className={"blog"} to={"/blog-inside"}>
                                                 <img src={BlogImage} className={"img-fluid w-100"} alt={"Blog"}/>
                                                 <span className={"blog-title d-block pt-3"}>
                                                             Global pandemic strikes again
                                                         </span>
                                                 <span className={"blog-duration"}>4 min of reading</span>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className={"col-lg-4 d-lg-block d-none col-12 my-lg-2 mb-2"}>
-                                            <a className={"blog"} href={"/"}>
+                                            <Link className={"blog"} to={"/blog-inside"}>
                                                 <img src={BlogImage} className={"img-fluid w-100"} alt={"Blog"}/>
                                                 <span className={"blog-title d-block pt-3"}>
                                                             Global pandemic strikes again
                                                         </span>
                                                 <span className={"blog-duration"}>4 min of reading</span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

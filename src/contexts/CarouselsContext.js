@@ -19,7 +19,6 @@ export default function CarouselsContext() {
                             </h3>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                // xmlns:xlink="http://www.w3.org/1999/xlink"
                                 width="93px" height="2px">
                                 <path fillRule="evenodd" fill="rgb(97, 89, 167)"
                                       d="M-0.000,1.998 L-0.000,-0.001 L92.999,-0.001 L92.999,1.998 L-0.000,1.998 Z"/>
@@ -57,7 +56,6 @@ export default function CarouselsContext() {
                             </h3>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                // xmlns:xlink="http://www.w3.org/1999/xlink"
                                 width="93px" height="2px">
                                 <path fillRule="evenodd" fill="rgb(97, 89, 167)"
                                       d="M-0.000,1.998 L-0.000,-0.001 L92.999,-0.001 L92.999,1.998 L-0.000,1.998 Z"/>
@@ -95,7 +93,6 @@ export default function CarouselsContext() {
                             </h3>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                // xmlns:xlink="http://www.w3.org/1999/xlink"
                                 width="93px" height="2px">
                                 <path fillRule="evenodd" fill="rgb(97, 89, 167)"
                                       d="M-0.000,1.998 L-0.000,-0.001 L92.999,-0.001 L92.999,1.998 L-0.000,1.998 Z"/>

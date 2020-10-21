@@ -1,5 +1,6 @@
-import {Toast} from "react-bootstrap";
 import React, {useState} from "react";
+import { Link } from 'react-router-dom';
+import {Toast} from "react-bootstrap";
 
 export default function ToastContext() {
     const [show, setShow] = useState(true);
@@ -20,8 +21,8 @@ export default function ToastContext() {
                             the printing and typesetting industry.</p>
                         <div className={"row"}>
                             <div className={"col-6 pr-1"}>
-                                <a href={"/contacts"} className={"btn-success btn btn-block btn-sm"}>Schedule
-                                    a call</a>
+                                <Link to={"/contacts"} className={"btn-success btn btn-block btn-sm"}>Schedule
+                                    a call</Link>
                             </div>
                             <div className={"col-6 pl-1"}>
                                 <button className={"btn-outline-success btn-block btn btn-sm"}

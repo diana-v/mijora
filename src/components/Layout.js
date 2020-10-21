@@ -1,10 +1,10 @@
-import React, { Component} from "react"
+import React, { Component} from "react";
 import jQuery from "jquery";
 import ToastContext from "../contexts/ToastContext";
 
-import Sun from '../assets/icons/sun.svg'
-import Moon from '../assets/icons/moon.svg'
-import Baby from '../assets/icons/baby.svg'
+import Sun from '../assets/icons/sun.svg';
+import Moon from '../assets/icons/moon.svg';
+import Baby from '../assets/icons/baby.svg';
 
 export default class Layout extends Component {
     modeToggle = () => {
@@ -39,33 +39,33 @@ export default class Layout extends Component {
                 <span id={"circle"} className={"circle"}></span>
                 <div style={{position: "fixed", zIndex: "3", left: "65px", bottom: "20px"}}
                      className={"d-none d-lg-block"}>
-                    <div href={"#"} onClick={this.modeToggle}>
-                        <a href={"#"}>
+                    <div onClick={this.modeToggle}>
+                        <div>
                             <div className={"mob-consult"}>
                                 <img src={Sun} width="35" className={"sun"} alt={"Sun icon"}/>
                                 <img src={Moon} width="35" className={"moon d-none"} alt={"Moon icon"}/>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
 
                 <div style={{position: "fixed", zIndex: "3", right: "20px", bottom: "77px"}}>
-                    <div href={"#"} onClick={this.modeToggle} className={"invisible-d"}>
-                        <a href={"#"} className={"invisible-d"}>
+                    <div onClick={this.modeToggle} className={"invisible-d"}>
+                        <div className={"invisible-d"}>
                             <div className={"mob-consult"}>
                                 <img src={Sun} width="35" className={"sun"} alt={"Sun icon"}/>
                                 <img src={Moon} width="35" className={"moon d-none"} alt={"Moon icon"}/>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
 
                 <div style={{position: "fixed", zIndex: "3", right: "20px", bottom: "20px"}}>
-                    <a href={"#"} className={"invisible-d"}>
+                    <div className={"invisible-d"}>
                         <div className={"mob-consult"}>
                             <img src={Baby} width="35" alt={"Circle icon"}/>
                         </div>
-                    </a>
+                    </div>
                     <ToastContext/>
                 </div>
             </div>

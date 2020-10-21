@@ -1,6 +1,7 @@
-import React, {Component} from 'react'
-import NextIcon from '../assets/icons/next.svg'
-import ArrowRightIcon from '../assets/icons/right.svg'
+import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
+import NextIcon from '../assets/icons/next.svg';
+import ArrowRightIcon from '../assets/icons/right.svg';
 
 export default class Job extends Component {
     render() {
@@ -17,19 +18,19 @@ export default class Job extends Component {
                                     </h2>
                                     <h3 className={"header-3"}>
                                         you?
-                                        <a href={"/"} className={"more d-lg-none d-block"}><span
+                                        <Link to={"/career"} className={"more d-lg-none d-block"}><span
                                             className={"more"}>See more <img src={NextIcon}
-                                                                             width="17" alt={"Next icon"}/></span></a>
+                                                                             width="17" alt={"Next icon"}/></span></Link>
                                     </h3>
                                 </div>
-                                <div className={"col-lg-6 col-12  text-right pt-3 d-lg-block d-none"}>
-                                    <a href={"/"} className={"more"}><span className={"more"}>See more <img
-                                        src={NextIcon} width="20" alt={"Next icon"}/></span></a>
+                                <div className={"col-lg-6 col-12 text-right pt-3 d-lg-block d-none"}>
+                                    <Link to={"/career"} className={"more"}><span className={"more"}>See more <img
+                                        src={NextIcon} width="20" alt={"Next icon"}/></span></Link>
                                 </div>
                                 <div className={"col-12"}>
                                     <div className={"row"}>
-                                        <div className={"col-lg-6 col-12 my-2"}>
-                                            <a className={"job"} href={"/"}>
+                                        <div className={"col-lg-6 col-md-6 col-12 my-2"}>
+                                            <Link className={"job"} to={"/job-inside"}>
                                                 <div className={"job-card employer-card"}>
                                                     <div className={"card-body px-0"}>
                                                         <div className={"row"}>
@@ -46,10 +47,10 @@ export default class Job extends Component {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
-                                        <div className={"col-lg-6 col-12 my-2"}>
-                                            <a className={"job"} href={"/"}>
+                                        <div className={"col-lg-6 col-md-6 col-12 my-2"}>
+                                            <Link className={"job"} to={"/job-inside"}>
                                                 <div className={"job-card employer-card"}>
                                                     <div className={"card-body px-0"}>
                                                         <div className={"row"}>
@@ -66,10 +67,10 @@ export default class Job extends Component {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
-                                        <div className={"col-lg-6 col-12 my-2"}>
-                                            <a className={"job"} href={"/"}>
+                                        <div className={"col-lg-6 col-md-6 col-12 my-2"}>
+                                            <Link className={"job"} to={"/job-inside"}>
                                                 <div className={"job-card employer-card"}>
                                                     <div className={"card-body px-0"}>
                                                         <div className={"row"}>
@@ -86,10 +87,10 @@ export default class Job extends Component {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
-                                        <div className={"col-lg-6 col-12 my-2"}>
-                                            <a className={"job"} href={"/"}>
+                                        <div className={"col-lg-6 col-md-6 col-12 my-2"}>
+                                            <Link className={"job"} to={"/job-inside"}>
                                                 <div className={"job-card employer-card"}>
                                                     <div className={"card-body px-0"}>
                                                         <div className={"row"}>
@@ -106,7 +107,7 @@ export default class Job extends Component {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

@@ -1,20 +1,21 @@
-import Icon from '../assets/logos/mijora_icon.svg'
-import LocationIcon from '../assets/icons/location.svg'
-import PhoneIcon from '../assets/icons/phone.svg'
-import EmailIcon from '../assets/icons/email.svg'
-import ArrowRightIcon from '../assets/icons/right.svg'
-import Customer1 from '../assets/brands/example-customer-1.png'
-import Customer2 from '../assets/brands/example-customer-2.png'
-import Customer3 from '../assets/brands/example-customer-3.png'
-import Customer4 from '../assets/brands/example-customer-4.png'
 import React from "react";
-import {Form, Button} from 'react-bootstrap'
+import { Link } from 'react-router-dom';
+import {Form, Button} from 'react-bootstrap';
+import Icon from '../assets/logos/mijora_icon.svg';
+import LocationIcon from '../assets/icons/location.svg';
+import PhoneIcon from '../assets/icons/phone.svg';
+import EmailIcon from '../assets/icons/email.svg';
+import ArrowRightIcon from '../assets/icons/right.svg';
+import Customer1 from '../assets/brands/example-customer-1.png';
+import Customer2 from '../assets/brands/example-customer-2.png';
+import Customer3 from '../assets/brands/example-customer-3.png';
+import Customer4 from '../assets/brands/example-customer-4.png';
 
 export default function Contacts() {
     return (
         <div>
             <div className={"other logo-wrapper"}>
-                <a href={"/"}><img src={Icon} width="70" alt={"Mijora icon"}/></a>
+                <Link to={"/"}><img src={Icon} width="70" alt={"Mijora icon"}/></Link>
             </div>
             <div className={"block-default pt-0 pt-lg-5"}>
                 <div className={"container py-lg-3"}>
@@ -25,9 +26,8 @@ export default function Contacts() {
                                     <h2 className={"header-2"}>
                                         Lets get in touch!
                                     </h2>
-                                    <p className={"f-basker paragraph"}> Fill out the contact form and we will definetely
-                                        contact
-                                        you in the near future.</p>
+                                    <p className={"f-basker paragraph"}> Fill out the contact form and we will definitely
+                                        contact you in the near future.</p>
                                     <Form className={"pb-3"}>
                                         <Form.Group className={"form-group"}>
                                             <Form.Label>Name, surname</Form.Label>
@@ -81,14 +81,14 @@ export default function Contacts() {
                         <div className={"col-lg-6 pt-lg-0 pt-4 col-12 my-auto contacts"}>
                             <div className={"row"}>
                                 <div className={"col-12"}>
-                                    <h2 className={"header-2"}>Things we can help You with</h2>
+                                    <h2 className={"header-2"}>Things we can help you with</h2>
                                     <p className={"f-basker paragraph"}>
                                         These are the main topics we are working with, but our team is always ready for
                                         new suggestions or a challange
                                     </p>
                                 </div>
                                 <div className={"col-12 my-2"}>
-                                    <a className={"job"} href={"/job-inside"}>
+                                    <Link className={"job"} to={"/job-inside"}>
                                         <div className={"job-card employer-card"}>
                                             <div className={"card-body px-0"}>
                                                 <div className={"row"}>
@@ -104,10 +104,10 @@ export default function Contacts() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className={"col-12 my-2"}>
-                                    <a className={"job"} href={"/job-inside"}>
+                                    <Link className={"job"} to={"/job-inside"}>
                                         <div className={"job-card employer-card"}>
                                             <div className={"card-body px-0"}>
                                                 <div className={"row"}>
@@ -123,10 +123,10 @@ export default function Contacts() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className={"col-12 my-2"}>
-                                    <a className={"job"} href={"/job-insider"}>
+                                    <Link className={"job"} to={"/job-insider"}>
                                         <div className={"job-card employer-card"}>
                                             <div className={"card-body px-0"}>
                                                 <div className={"row"}>
@@ -142,10 +142,10 @@ export default function Contacts() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className={"col-12 my-2"}>
-                                    <a className={"job"} href={"/job-inside"}>
+                                    <Link className={"job"} to={"/job-inside"}>
                                         <div className={"job-card employer-card"}>
                                             <div className={"card-body px-0"}>
                                                 <div className={"row"}>
@@ -161,7 +161,7 @@ export default function Contacts() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className={"col-12 pt-3"}>
                                     <h4>

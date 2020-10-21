@@ -1,51 +1,52 @@
-import React, {Component} from 'react'
-import MijoraLogo from '../assets/logos/mijora_logo.svg'
+import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
+import MijoraLogo from '../assets/logos/mijora_logo.svg';
 
 export default class Footer extends Component {
     render() {
         return (
-            <footer className={"py-4"}>
+            <footer className={"py-4" + (this.props.useScrollSnap ? ' bl' : '')}>
                 <div className={"container"}>
                     <div className={"row"}>
                         <div className={"col-lg-3 col-12"}>
                             <ul className={"f-basker unstyled pl-0"}>
                                 <li>
-                                    <a href={"/"}>Home</a>
+                                    <Link to={{pathname: "/", hash: "#home", state: { fromDashboard: true }}}>Home</Link>
                                 </li>
                                 <li>
-                                    <a href={"/"}>Career</a>
+                                    <Link to={"/career"}>Career</Link>
                                 </li>
                                 <li>
-                                    <a href={"/"}>Services</a>
+                                    <Link to={"/services"}>Services</Link>
                                 </li>
                                 <li>
-                                    <a href={"/"}>Contact</a>
+                                    <Link to={"/contacts"}>Contact</Link>
                                 </li>
                             </ul>
                         </div>
                         <div className={"col-lg-3 col-12"}>
                             <ul className={"unstyled pl-0 thin"}>
                                 <li>
-                                    <a href={"/"}>Web development</a>
+                                    <Link to={{pathname: "/services/", hash: "#web-development", state: { fromDashboard: true }}}>Web development</Link>
                                 </li>
                                 <li>
-                                    <a href={"/"}>Mobile apps</a>
+                                    <Link to={{pathname: "/services/", hash: "#mobile-apps", state: { fromDashboard: true }}}>Mobile apps</Link>
                                 </li>
                                 <li>
-                                    <a href={"/"}>Internet websites</a>
+                                    <Link to={{pathname: "/services/", hash: "#websites", state: { fromDashboard: true }}}>Internet websites</Link>
                                 </li>
                                 <li>
-                                    <a href={"/"}>Ecommerce</a>
+                                    <Link to={{pathname: "/services/", hash: "#e-commerce", state: { fromDashboard: true }}}>Ecommerce</Link>
                                 </li>
                             </ul>
                         </div>
                         <div className={"col-lg-3 col-12"}>
                             <ul className={"unstyled thin pl-0"}>
                                 <li>
-                                    <a href={"/"}>Cookies</a>
+                                    <Link to={"/"}>Cookies</Link>
                                 </li>
                                 <li>
-                                    <a href={"/"}>Privacy</a>
+                                    <Link to={"/"}>Privacy</Link>
                                 </li>
                             </ul>
                         </div>

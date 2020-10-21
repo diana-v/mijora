@@ -1,4 +1,5 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 import CarouselsContext from "../contexts/CarouselsContext";
 
 export default class Clients extends Component {
@@ -21,7 +22,7 @@ export default class Clients extends Component {
                             <div className={"container"}>
                                 <div className={"row"}>
                                     <div className={"col-12 text-center mt-2 pt-lg-0"}>
-                                        <a href={"/"} className={"btn btn-success f-width-xs"}>Let us prove</a>
+                                        <Link to={"/contacts"} className={"btn btn-success f-width-xs"}>Let us prove it</Link>
                                     </div>
                                 </div>
                             </div>
